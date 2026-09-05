@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Email Threat Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🛡️ AI Email Threat Detection</h1>
+        <p>Analyze suspicious emails and detect potential threats</p>
+    </header>
+
+
+    <div class="card">
+
+        <h2>Email Analyzer</h2>
+
+        <label>Sender Email</label>
+        <input
+            type="text"
+            id="sender"
+            placeholder="example@gmail.com"
+        >
+
+        <label>Email Subject</label>
+        <input
+            type="text"
+            id="subject"
+            placeholder="Enter email subject"
+        >
+
+        <label>Email Content</label>
+        <textarea
+            id="emailContent"
+            placeholder="Paste the email content here..."
+        ></textarea>
+
+        <button onclick="analyzeEmail()">
+            🔍 Analyze Email
+        </button>
+
+    </div>
+
+
+    <div class="result-card" id="resultCard">
+
+        <h2>Threat Analysis Result</h2>
+
+        <div class="score">
+            <h1 id="score">0%</h1>
+            <p>Threat Score</p>
+        </div>
+
+        <h2 id="status">
+            Waiting for analysis...
+        </h2>
+
+        <div id="reasons"></div>
+
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>🔗 Link Detection</h3>
+            <p>Detects suspicious links in emails</p>
+        </div>
+
+        <div class="feature">
+            <h3>⚠️ Threat Analysis</h3>
+            <p>Checks suspicious phishing keywords</p>
+        </div>
+
+        <div class="feature">
+            <h3>🤖 AI Simulation</h3>
+            <p>Calculates risk score automatically</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
